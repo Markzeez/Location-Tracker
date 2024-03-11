@@ -18,7 +18,7 @@ function Navbar() {
           src="https://res.cloudinary.com/dyjo2mvqb/image/upload/v1709210182/Vector_pzyczx.png"
           alt=""
         />
-      <Link to='/'>  <h2 className="text-white text-3xl font-extrabold  absolute left-8  pl-5 py-1 cursor-pointer">
+      <Link to={'home'}>  <h2 className="text-white text-3xl font-extrabold  absolute left-8  pl-5 py-1 cursor-pointer">
           TRACUS
         </h2></Link>
       </div>
@@ -44,14 +44,14 @@ function Navbar() {
       >
         <ul className="text-white space-x-2 flex flex-col justify-center text-left  ">
           <div className='flex flex-row justify-center items-center space-x-8'>
-            <Link to="login">
+            <Link to={"login"}>
               <li className="  ">Login</li>
             </Link>
              
-            <Link to="about">
+          <Link to={"about"}>
               <li className=" ">About</li>
             </Link>
-            <Link to="contact">
+            <Link to={"contact"}>
               <li className=" ">Contact</li>
             </Link>
             

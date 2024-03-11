@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
-import Map from '../Component/Map';
-import { api } from '../data/api'
+
+import MapPage from '../Component/MapPage';
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 function TrackPage() {
-  const [data, setData] = useState(api)
-  console.log(data)
+  
   return (
     <div className="w-full h-screen flex flex-row justify-between align-center bg-[#fdfdfd]">
       <div className="pl-10 space-y-5 w-[350px]">  
@@ -40,9 +38,8 @@ function TrackPage() {
 
     
       </div>
-      <div className="w-[850px] ">
-        <Map eventData={data}   />
-      
+      <div className="w-[900px] ">
+        <MapPage  />
       </div>
     </div>
   );
