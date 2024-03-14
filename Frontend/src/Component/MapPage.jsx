@@ -9,9 +9,11 @@ import LocationMarker from './LocationMarker';
 
 
 function MapPage() {
+  
   const [center, setCenter] = useState({ lat: 13.084622, lng: 80.248357 });
   const ZOOM_LEVEL = 9;
   const mapRef = useRef();
+  
 
   const location = useGeoLocation();
 
