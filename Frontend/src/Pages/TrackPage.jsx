@@ -1,12 +1,14 @@
 
 import MapPage from '../Component/MapPage';
 import { FaMapMarkerAlt } from "react-icons/fa";
+import Sidebar from '../Component/Sidebar';
 
 function TrackPage() {
   
   return (
     <div className="w-full h-screen flex flex-row justify-between align-center bg-[#fdfdfd]">
-      <div className="pl-10 space-y-5 w-[350px]">  
+      <Sidebar />
+      {/* <div className="pl-10 space-y-5 w-[350px]">  
         <div>
         <h1 className='text-4xl text-center pt-8 font-semibold '>Tracking</h1>
         <form className='mt-8 space-y-4 items-center '>
@@ -37,7 +39,7 @@ function TrackPage() {
         </div>
 
     
-      </div>
+      </div> */}
       <div className="w-[900px] ">
         <MapPage  />
       </div>
