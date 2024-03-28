@@ -8,9 +8,10 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Sidebar from './Component/Sidebar';
 
+
 function App() {
   return (
-    <main className="flex">
+    <main className="">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

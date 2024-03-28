@@ -11,27 +11,27 @@ function Navbar() {
   };
 
   return (
-    <div className=" w-full h-[80px] flex justify-between items-center px-4 bg-[#090503] pl-10 pr-8 pt-5 text-white ">
-      <div className="flex  flex-row ">
+    <div className=" w-[100%] h-[52px] flex justify-between items-center px-4 bg-[#090503] pl-10 pr-8 pt-2  ">
+      <Link to='/'><div className="flex flex-row  ">
         <img
           className="w-25 h-12 relative left-0 "
           src="https://res.cloudinary.com/dyjo2mvqb/image/upload/v1709210182/Vector_pzyczx.png"
           alt=""
         />
-      <Link to={'home'}>  <h2 className="text-white text-3xl font-extrabold  absolute left-8  pl-5 py-1 cursor-pointer">
+        <h2 className="text-white text-3xl font-extrabold  absolute left-8  pl-5 py-1 cursor-pointer">
           TRACUS
-        </h2></Link>
-      </div>
+        </h2>
+      </div></Link>
       <div className="hidden  md:flex flex-row justify-between items-center space-x-24 cursor-pointer text-base px-2">
-        <div>Login</div>
-        <div className="flex flex-row justify-between space-x-10 cursor-pointer">
-          <div>About</div>
-          <div>Contact</div>
+        <Link to={'login'}><div className='text-white'>Login</div></Link>
+        <div className="flex flex-row justify-between items-center space-x-10 cursor-pointer">
+          <Link to={'about'}><div className='text-white'>About</div></Link>
+          <Link to={'contact'}><div className='text-white'>Contact</div></Link>
         </div>
       </div>
       {/**Mobile dropdown */}
       <div onClick={handleNav} className="md:hidden z-10">
-        {!nav ? <IoMdMenu /> : <IoCloseOutline />}
+        {!nav ? <IoMdMenu className='text-white' /> : <IoCloseOutline className='text-white'  />}
       </div>
 
       <div
@@ -44,7 +44,7 @@ function Navbar() {
       >
         <ul className="text-white space-x-2 flex flex-col justify-center text-left  ">
           <div className='flex flex-row justify-center items-center space-x-8'>
-            <Link to={"login"}>
+            <Link to="login">
               <li className="  ">Login</li>
             </Link>
              
